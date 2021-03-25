@@ -1,4 +1,4 @@
-*{
+:root{
     --primary-color: #6200EE;
     --primary-light: #c39ff5;
     --primary-hover:  #3700B3;
@@ -11,8 +11,6 @@
     padding-top: 1em;
     padding-bottom: 0.5em;
 }
-
-
 
 /* AVATAR */
 
