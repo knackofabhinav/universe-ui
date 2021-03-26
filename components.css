@@ -485,7 +485,7 @@
 }
 
 .navigation > ul > li {
-    margin: 20px;
+    /* margin: 0.5rem; */
     background-color: transparent;
     padding: 0.5em;
 }
