@@ -75,7 +75,7 @@
     display: flex;
     position: relative;
     /* height: 1vh; */
-    width: 100px;
+    /* width: 100px; */
     flex-direction: row;
     cursor: pointer;
 }
