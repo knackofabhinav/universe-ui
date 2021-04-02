@@ -304,7 +304,7 @@
 /* CARDS */
 .card{
     box-shadow: 1px 5px 5px rgba(0,0,0,.15);
-    width: 17em;
+    max-width: 17em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -464,7 +464,7 @@
 /* NAVIGATION BAR */
 
 .navigation {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     height: 10vh;
     display: flex;
     justify-content: space-between;
