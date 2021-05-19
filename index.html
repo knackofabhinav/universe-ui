@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Logo/icon-black.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="components.css">
+    <title>Universe UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="https://universeui.netlify.app/"><img src="./assets/Logo/icon-black.png" ></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Documentation</a></li>
+                <li><a href="/">About</a></li>
+            </ul>
+        </div>
+        <div class="aside-container">
+            <div class="aside">
+                <ul>
+                    <li><a href="#avatar">Avatar</a></li>
+                    <li><a href="#alert">Alert</a></li>
+                    <li><a href="#badge">Badge</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#image">Image</a></li>
+                    <li><a href="#input">Input</a></li>
+                    <li><a href="#list">List</a></li> 
+                    <li><a href="#navigation-bar">Navigation Bar</a></li>
+                    <li><a href="#modal">Modal</a></li>
+                    <li><a href="#rating">Rating</a></li>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#simpified-grid">Simplified Grid</a></li>
+                    <li><a href="#text-util">Text Utilities</a></li>
+                    <li><a href="#toast">Toast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Welcome to Universe UI</h1>
+            <p>To import type 👇 in HTML File<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://universeui.netlify.app/components.css&quot;&gt;</pre></p>
+            <div id="avatar">
+                <h2 class="component">Avatar</h2>
+                <p class="component"> An avatar (also known as a profile picture or userpic) is a graphical representation of a user or the user's character or persona. It may take either a two-dimensional form as an icon in Internet forums and other online communities or a three-dimensional form, as in games or virtual worlds.</p>
+                <img class="avatar" src="https://picsum.photos/200.jpg"/>
+                <img class="avatar large" src="https://picsum.photos/300.jpg"/>
+                <pre>&lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/200.jpg&quot;&gt;</pre>
+                <pre>&lt;img class=&quot;avatar large&quot; src=&quot;https://picsum.photos/200.jpg&quot;&gt;</pre>
+            </div>
+            <div id="alert">
+                <h2 class="component">Alert</h2>
+                <p class="component">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+                <div class="alert">
+                    <p> &nbsp This is an normal alert — check it out!</p>
+                </div>
+                <div class="alert danger">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p> This is an error alert — check it out!</p>
+                </div>
+                <div class="alert warning">
+                    <i class="fas fa-exclamation"></i>
+                    <p> This is a warning alert — check it out!</p>
+                </div>
+                <div class="alert info">
+                    <i class="fas fa-info"></i>
+                    <p> This is an info alert — check it out!</p>
+                </div>
+                <div class="alert success">
+                    <i class="fas fa-check-circle"></i>
+                    <p> This is an success alert — check it out!</p>
+                </div>
+                <p>I used Font Awesome Icons in Alerts so make sure you import it before using these.</p>
+                <p>It you can't find the CDN for font awesome copy this <a href="<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>Link</a> in your HTML File</p>
+
+                <pre>
+                    &lt;div class=&quot;alert&quot;&gt;
+                        &lt;p&gt; This is an normal alert — check it out!&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+
+
+                <pre>
+                    &lt;div class=&quot;alert danger&quot;&gt;
+                        &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt; This is an danger alert — check it out!&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+
+                <pre>
+                    &lt;div class=&quot;alert warning&quot;&gt;
+                        &lt;i class=&quot;fas fa-exclamation&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt; This is an warning alert — check it out!&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+
+                <pre>
+                    &lt;div class=&quot;alert info&quot;&gt;
+                        &lt;i class=&quot;fas fa-info&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt; This is an info alert — check it out!&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+
+                <pre>
+                    &lt;div class=&quot;alert success&quot;&gt;
+                        &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt; This is an success alert — check it out!&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+            <div id="badge">
+                <h2 class="component">Badge</h2>
+                <p class="component">Badge generates a small badge to the top-right of its child(ren).</p> <br>
+                <p>I used Font Awesome Icons in Alerts so make sure you import it before using these.</p>
+                <div class="badge-box">
+                    <div class="badge-container">
+                        <i class="fas fa-reply"></i>
+                        <div class="badge">
+                            10
+                        </div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="badge primary">
+                            19
+                        </div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="badge secondary">
+                            19
+                        </div>
+                    </div>
+                    <div class="badge-container">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="badge error">
+                            19
+                        </div>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar" src="https://picsum.photos/200.jpg">
+                        <div class="badge error avatar-badge">
+                            19
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;i class=&quot;fas fa-reply&quot;&gt;&lt;/i&gt;
+                        &lt;div class=&quot;badge&quot;&gt; 10&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;i class=&quot;fas fa-phone-alt&quot;&gt;&lt;/i&gt;
+                        &lt;div class=&quot;badge primary&quot;&gt; 19&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;i class=&quot;fas fa-phone-alt&quot;&gt;&lt;/i&gt;
+                        &lt;div class=&quot;badge secondary&quot;&gt; 19&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;i class=&quot;fas fa-phone-alt&quot;&gt;&lt;/i&gt;
+                        &lt;div class=&quot;badge error&quot;&gt; 19&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+                <pre>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/200.jpg&quot;&gt;
+                        &lt;div class=&quot;badge error avatar-badge&quot;&gt; 19&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+            <div id="buttons">
+                <h2 class="component">Buttons</h2>
+                <p class="component">Buttons allow users to take actions, and make choices, with a single tap.</p>
+                <p class="component">Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+                    <ul class="component">
+                        <li>Dialogs</li>
+                        <li>Modal windows</li>
+                        <li>Forms</li>
+                        <li>Cards</li>
+                        <li>Toolbars</li>
+                    </ul>
+                </p>
+                <h3 class="component">Contained Button</h3>
+                <p class="component">Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.</p>
+                <button class="btn">Default</button>
+                <button class="btn primary">Primary</button>
+                <button class="btn secondary">Secondary</button>
+                <button class="btn disabled" disabled>Disabled</button>
+                <button class="btn link"><a href="#">Link</a></button>
+
+                <pre>
+                    &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn primary&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn secondary&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn link&quot;&gt;Button&lt;/button&gt;
+                </pre>
+
+                <h3 class="component">Text Button</h3>
+                <p class="component">Text buttons are typically used for less-pronounced actions, including those located in dialogs, cards. In cards, text buttons help maintain an emphasis on card content.</p>   
+                <button class="btn text">Default</button>
+                <button class="btn primary text">Primary</button>
+                <button class="btn secondary text">Secondary</button>
+                <button class="btn disabled text" disabled>Disabled</button>
+                <button class="btn link text"><a href="#">Link</a></button>
+                
+                <pre>
+                    &lt;button class=&quot;btn text&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn primary text&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn secondary text&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn link text&quot;&gt;Button&lt;/button&gt;
+                </pre>
+
+                <h3 class="component">Outlined Button</h3>
+                <p class="component">Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.</p>
+                <p class="component">Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.</p>
+                <button class="btn outline">Default</button>
+                <button class="btn primary outline">Primary</button>
+                <button class="btn secondary outline">Secondary</button>
+                <button class="btn disabled outline" disabled>Disabled</button>
+                <button class="btn link outline"><a href="#">Link</a></button>
+
+                <pre>
+                    &lt;button class=&quot;btn outline&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn primary outline&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn secondary outline&quot;&gt;Button&lt;/button&gt;
+                    &lt;button class=&quot;btn link outline&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                <h3 class="component">Floating Action Button</h3>
+                <div class="floating-btn-container">
+                <button class="floating-btn">+</button>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tempora dolor aut molestias a sint eius in id consequatur. Ratione molestiae animi cumque voluptate, iste aut perspiciatis enim ab modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit rem, quas unde cum alias, ad corrupti nemo ullam ut in. Porro id eos quidem quaerat in vitae, praesentium eligendi!</p>
+                </div>
+                <pre>
+                    &lt;div class=&quot;floating-btn-container&quot;&gt;
+                        &lt;button class=&quot;floating-btn&quot;&gt;
+                        +
+                        &lt;/button&gt;
+                        &lt;p&gt;Loremidem quaerat in vitae, praesentium eligendi&lt;/p&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+            <div id="cards">
+                <h2 class="component">Cards</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <i class="fas fa-badge"></i>
+                            <p class="badge-text">New</p>
+                            <img src="https://cesarkaikarate.com/wp-content/uploads/2017/04/default-image.jpg">
+                            <button class="close">X</button>
+                        </div>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum nihil molestias excepturi, quasi corporis quae deleniti voluptatibus architecto est tempora. Mollitia nisi accusamus, a voluptas maiores consectetur molestiae beatae.</p>
+                        <button class="btn primary">CTA</button>
+                    </div>
+                    <div class="card text shadow">
+                        <h2>Heading</h2>
+                        <h3>Sub Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum nihil molestias excepturi, quasi corporis quae deleniti voluptatibus architecto est tempora. Mollitia nisi accusamus, a voluptas maiores consectetur molestiae beatae.</p>
+                        <button class="btn primary link text">Read More...</button>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class="card"&gt;
+                        &lt;div class="thumbnail"&gt;
+                            &lt;i class="fas fa-badge"&gt;&lt;/i&gt;
+                            &lt;p class="badge-text"&gt;New&lt;/p&gt;
+                            &lt;img src="https://cesarkaikarate.com/wp-content/uploads/2017/04/default-image.jpg"&gt;
+                            &lt;button class="close"&gt;X&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;h2&gt;Heading&lt;/h2&gt;
+                        &lt;p&gt;Lorem ipsum doolestiae beatae.&lt;/p&gt;
+                        &lt;button class="btn primary"&gt;CTA&lt;/button&gt;
+                    &lt;/div&gt;
+                </pre>
+
+                
+                <pre>
+                    &lt;div class="card text shadow">
+                        &lt;h2>Heading&lt;/h2>
+                        &lt;h3>Sub Heading&lt;/h3>
+                        &lt;p>Lorem iores consectetur molestiae beatae.&lt;/p>
+                        &lt;button class="btn primary link text">Read More...&lt;/button>
+                    &lt;/div>
+                </pre>
+                <div class="card text shadow horizontal">
+                    <h2>Heading</h2>
+                    <h3>Sub Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum nihil molestias excepturi, quasi corporis quae deleniti voluptatibus architecto est tempora. Mollitia nisi accusamus, a voluptas maiores consectetur molestiae beatae.</p>
+                    <div class="links">
+                        <button class="btn primary text">Read More...</button>
+                        <button class="btn secondary text">Share Now</button>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class="card text shadow horizontal">
+                        &lt;h2>Heading&lt;/h2>
+                        &lt;h3>Sub Heading&lt;/h3>
+                        &lt;p>Lorem ipsnsectetur molestiae beatae.&lt;/p>
+                        &lt;div class="links">
+                            &lt;button class="btn primary text">Read More...&lt;/button>
+                            &lt;button class="btn secondary text">Share Now&lt;/button>
+                        &lt;/div>
+                    &lt;/div>
+                </pre>
+                <h4>For Card Shadow : use class="card shadow" <br>
+                    For Horizontal Card : use class="card horizontal"
+                </h4>
+            </div>
+
+            <div id="image">
+                <h2 class="component">Images</h2>
+                <h3 class="component">Responsive Images</h3>
+                <p class="component">Responsive images will automatically adjust to fit the size of the screen.</p>
+                <div class="image-container">
+                    <img class="reponsive-img" src="https://images.unsplash.com/photo-1602491453318-dcdf64966d7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
+                </div>
+                <pre>
+                    &lt;div class="image-container">
+                        &lt;img class="reponsive-img" src="IMAGE_URL">
+                    &lt;/div>
+                </pre>
+                    <h3 class="component">Circular Images</h3>
+                    <p class="component">Make Prefectly Circular Images.</p>
+                    <img class="circle-img" src="https://images.unsplash.com/photo-1602491453318-dcdf64966d7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop">
+
+                <pre>
+                    &lt;img class="circle-img" src="IMAGE_URL">
+                </pre>
+            </div>
+            <div id="input">
+                <h2 class="component">Input</h2>
+                <p class="component">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+                <div>
+                    <div class="input-container">
+                        <span>@</span>
+                        <input placeholder="Username" aria-label="Username">
+                    </div>
+                    <div class="input-container">
+                        <input placeholder="Recipient's username" aria-label="Recipient's username">
+                        <span>@example.com</span>
+                    </div>
+                    <p class="component">Your Vanity URL</p>
+                    <div class="input-container">
+                        <span>https://example.com/users/</span>
+                        <input placeholder="" >
+                    </div>
+                    <div class="input-container">
+                        <span>₹</span>
+                        <input placeholder="" aria-label="Amount (to the nearest rupee)">
+                        <span>.00</span>
+                    </div>
+                    <div class="input-container">
+                        <span>With Textarea</span>
+                        <textarea placeholder="" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div>
+                        &lt;div class="input-container">
+                            &lt;span>@&lt;/span>
+                            &lt;input placeholder="Username" aria-label="Username">
+                        &lt;/div>
+                        &lt;div class="input-container">
+                            &lt;input placeholder="Recipient's username" 
+                            aria-label="Recipient's username">
+                            &lt;span>@example.com&lt;/span>
+                        &lt;/div>
+                        &lt;p class="component">Your Vanity URL&lt;/p>
+                        &lt;div class="input-container">
+                            &lt;span>https://example.com/users/&lt;/span>
+                            &lt;input placeholder="" >
+                        &lt;/div>
+                        &lt;div class="input-container">
+                            &lt;span>₹&lt;/span>
+                            &lt;input placeholder="" 
+                            aria-label="Amount (to the nearest rupee)">
+                            &lt;span>.00&lt;/span>
+                        &lt;/div>
+                        &lt;div class="input-container">
+                            &lt;span>With Textarea&lt;/span>
+                            &lt;textarea placeholder="" aria-label="With textarea">&lt;/textarea>
+                        &lt;/div>
+                    &lt;/div>
+                </pre>
+            </div>
+            <div id="list">
+                <h2 class="component"> Lists</h2>
+                <div>
+                    <ul class="list">
+                        <li><i class="far fa-envelope-open-text"></i>Sent Mail</li>
+                        <li><i class="fab fa-firstdraft"></i>Draft</li>
+                        <li><i class="fas fa-inbox"></i>Inbox</li>
+                        <li><i class="fas fa-trash"></i>Trash</li>
+                    </ul>
+                    <pre>
+                        &lt;ul class="list">
+                            &lt;li>&lt;i class="far fa-envelope-open-text">&lt;/i>Sent Mail&lt;/li>
+                            &lt;li>&lt;i class="fab fa-firstdraft">&lt;/i>Draft&lt;/li>
+                            &lt;li>&lt;i class="fas fa-inbox">&lt;/i>Inbox&lt;/li>
+                            &lt;li>&lt;i class="fas fa-trash">&lt;/i>Trash&lt;/li>
+                        &lt;/ul>
+                    </pre>
+                    <ul class="list">
+                        <li>
+                            <div class="card text shadow horizontal">
+                                <h2>Heading</h2>
+                                <h3>Sub Heading</h3>
+                                <p>Lorem ipsnsectetur molestiae beatae. </p>
+                                <div class="links">
+                                    <button class="btn primary text">Read More...</button>
+                                    <button class="btn secondary text">Share Now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card text shadow horizontal">
+                                <h2>Heading</h2>
+                                <h3>Sub Heading</h3>
+                                <p>Lorem ipsnsectetur molestiae beatae. </p>
+                                <div class="links">
+                                    <button class="btn primary text">Read More...</button>
+                                    <button class="btn secondary text">Share Now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card text shadow horizontal">
+                                <h2>Heading</h2>
+                                <h3>Sub Heading</h3>
+                                <p>Lorem ipsnsectetur molestiae beatae. </p>
+                                <div class="links">
+                                    <button class="btn primary text">Read More...</button>
+                                    <button class="btn secondary text">Share Now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card text shadow horizontal">
+                                <h2>Heading</h2>
+                                <h3>Sub Heading</h3>
+                                <p>Lorem ipsnsectetur molestiae beatae. </p>
+                                <div class="links">
+                                    <button class="btn primary text">Read More...</button>
+                                    <button class="btn secondary text">Share Now</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <pre>
+                        &lt;ul class="list">
+                            &lt;li>
+                                &lt;div class="card text shadow horizontal">
+                                    &lt;h2>Heading&lt;/h2>
+                                    &lt;h3>Sub Heading&lt;/h3>
+                                    &lt;p>Lorem ipsnsectetur molestiae beatae. &lt;/p>
+                                    &lt;div class="links">
+                                        &lt;button class="btn primary text">Read More...&lt;/button>
+                                        &lt;button class="btn secondary text">Share Now&lt;/button>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li>
+                                &lt;div class="card text shadow horizontal">
+                                    &lt;h2>Heading&lt;/h2>
+                                    &lt;h3>Sub Heading&lt;/h3>
+                                    &lt;p>Lorem ipsnsectetur molestiae beatae. &lt;/p>
+                                    &lt;div class="links">
+                                        &lt;button class="btn primary text">Read More...&lt;/button>
+                                        &lt;button class="btn secondary text">Share Now&lt;/button>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                        &lt;/ul>
+                    </pre>
+                </div>
+            </div>
+            <div id="navigation-bar">
+                <h2 class="component">Navigation Bar</h2>
+                <p class="component">The top App Bar provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+
+                    It can transform into a contextual action bar or be used as a navbar.</p>
+                <div class="navigation">
+                    <a href="https://universeui.netlify.app/"><img src="./assets/Logo/icon-black.png" ></a>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Contact</a></li>
+                        <li><a href="/">Documentation</a></li>
+                        <li><a href="/">About</a></li>
+                    </ul>
+                </div>
+                <pre>
+                    &lt;div class="navigation">
+                        &lt;a href="https://universeui.netlify.app/">
+                        &lt;img src="./assets/Logo/icon-black.png" >&lt;/a>
+                        &lt;ul>
+                            &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="/">Contact&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="/">Documentation&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="/">About&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                </pre>
+            </div>
+            <div id="modal">
+                <h2>Modal</h2>
+                <div class="modal-container">
+                    <div class="modal-top">
+                        <h3>Modal title</h3>
+                    </div>
+                    <hr>
+                    <div class="modal-middle">
+                        <p>Woohoo, you're reading this text in a modal!</p>
+                    </div>
+                    <hr>
+                    <div class="modal-bottom">
+                        <button class="btn secondary outline">Close</button>
+                        <button class="btn primary">Save Changes</button>
+                    </div>
+                </div>
+                <pre>
+                    &lt;div class="modal-container">
+                        &lt;div class="modal-top">
+                            &lt;h3>Modal title&lt;/h3>
+                            &lt;button class="btn">X&lt;/button>
+                        &lt;/div>
+                        &lt;hr>
+                        &lt;div class="modal-middle">
+                            &lt;p>Woohoo, you're reading this text in a modal!&lt;/p>
+                        &lt;/div>
+                        &lt;hr>
+                        &lt;div class="modal-bottom">
+                            &lt;button class="btn secondary outline">Close&lt;/button>
+                            &lt;button class="btn primary">Save Changes&lt;/button>
+                        &lt;/div>
+                    &lt;/div>
+                </pre>
+            </div>
+            <div id="rating">
+                <h2 class="component">Rating</h2>
+                <div class="rating">
+                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <pre>
+                    &lt;div class="rating">
+                        &lt;i class="fa fa-star checked" aria-hidden="true">&lt;/i>
+                        &lt;i class="fa fa-star checked" aria-hidden="true">&lt;/i>
+                        &lt;i class="fa fa-star checked" aria-hidden="true">&lt;/i>
+                        &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+                        &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+                      &lt;/div>
+                  </pre>
+            </div>
+            <div id="slider">
+                <h2 class="component">Slider</h2>
+                <input type="range" class="slider">
+                <p class="component">Later</p>
+            </div>
+            <div id="simpified-grid">
+                <h2 class="component">Simpified Grid</h2>
+                <div class="grid-2">
+                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum explicabo deleniti quo numquam culpa dolores fugiat modi. Vitae quaerat optio dolor, quos consequuntur qui, magnam assumenda perspiciatis excepturi saepe deserunt!</p></div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, repellat ea. Ad, nihil exercitationem. Velit illo unde asperiores. Sapiente in perspiciatis cumque exercitationem quaerat ipsam consequuntur tempore quae at laboriosam.</p></div>
+                </div>
+                <pre>
+                    &lt;div class="grid-2">
+                        &lt;div>&lt;p>Lorem erspii saepe deserunt!&lt;/p>&lt;/div>
+                        &lt;div>&lt;p>Lorem iquae at laboriosam.&lt;/p>&lt;/div>
+                    &lt;/div>
+                </pre>
+                <div class="grid-3">
+                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum explicabo deleniti quo numquam culpa dolores fugiat modi. Vitae quaerat optio dolor, quos consequuntur qui, magnam assumenda perspiciatis excepturi saepe deserunt!</p></div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, repellat ea. Ad, nihil exercitationem. Velit illo unde asperiores. Sapiente in perspiciatis cumque exercitationem quaerat ipsam consequuntur tempore quae at laboriosam.</p></div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, repellat ea. Ad, nihil exercitationem. Velit illo unde asperiores. Sapiente in perspiciatis cumque exercitationem quaerat ipsam consequuntur tempore quae at laboriosam.</p></div>
+                </div>
+                <pre>
+                    &lt;div class="grid-3">
+                        &lt;div>&lt;p>Lorem erspii saepe deserunt!&lt;/p>&lt;/div>
+                        &lt;div>&lt;p>Lorem iquae at laboriosam.&lt;/p>&lt;/div>
+                        &lt;div>&lt;p>Lorem erspii saepe deserunt!&lt;/p>&lt;/div>
+                    &lt;/div>
+                </pre>
+            </div>
+            <div id="text-util">
+                <h2 class="component">Text Utilities</h2>
+                <div class="text-utils">
+                    <p class="text-heading">Heading</p>
+                    <p class="text-heading2">Heading</p>
+                    <p class="text-small">Heading</p>
+                    <p class="grey-text">Heading</p>
+                    <p class="center-text">Heading</p>
+                </div>
+                <pre>
+                    &lt;p class="text-heading">Heading&lt;/p>
+                    &lt;p class="text-heading2">Heading&lt;/p>
+                    &lt;p class="text-small">Heading&lt;/p>
+                    &lt;p class="grey-text">Heading&lt;/p>
+                    &lt;p class="center-text">Heading&lt;/p>
+                </pre>
+            </div>
+            <div id="toast">
+                <h2 class="component">Toast</h2>
+                    <div class="toast">
+                        <div class="toast-top">
+                            <p class="text-heading">Heading</p>
+                            <div>
+                                <p class="text-small grey-text">11 mins ago</p>
+                                <button class="btn outline">X</button>
+                            </div>
+                        </div>
+                        <div class="toast-bottom">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ipsum voluptates ad nam ab! Ipsum, quidem animi explicabo sint aliquid quaerat possimus odio, molestias nulla assumenda sunt officiis harum atque.</p>
+                        </div>
+                    </div>
+                    <pre>
+                        &lt;div class="toast">
+                            &lt;div class="toast-top">
+                                &lt;p class="text-heading">Heading&lt;/p>
+                                &lt;div>
+                                    &lt;p class="text-small grey-text">11 mins ago&lt;/p>
+                                    &lt;button class="btn outline">X&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="toast-bottom">
+                                &lt;p>Lorem ipsumenda sunt officiis harum atque.&lt;/p>
+                            &lt;/div>
+                        &lt;/div>
+                    </pre>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Let's Connect Over</h3>
+            <ul>
+                <li><a href="https://twitter.com/KnackOfAbhinav"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/knackofabhinav/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/knackofabhinav/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
